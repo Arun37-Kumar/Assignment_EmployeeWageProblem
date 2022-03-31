@@ -13,7 +13,8 @@ namespace EmployeeWageProblem
             Console.WriteLine("Welcome to Employee Wage Problem : ");
 
             //Constants
-            int PRESENT = 1;
+            int PART_TIME = 1;
+            int FULL_TIME = 2;
             int EMP_RATE_PER_HOUR = 20;
 
             //Variables
@@ -21,10 +22,16 @@ namespace EmployeeWageProblem
             int empWage = 0;
             Random random = new Random();
 
-            int isCheck = random.Next(0, 2);
-            if (isCheck == PRESENT)
+            //Computations
+            int isCheck = random.Next(0, 3);
+            if (isCheck == FULL_TIME)
             {
                 Console.WriteLine("Employee is present.");
+                empHrs = 8;
+            }
+            else if (isCheck == PART_TIME)
+            {
+                Console.WriteLine("Employee is present for part time.");
                 empHrs = 8;
             }
             else
