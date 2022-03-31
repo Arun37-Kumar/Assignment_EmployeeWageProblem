@@ -15,30 +15,36 @@ namespace EmployeeWageProblem
             //Constants
             const int PART_TIME = 1;
             const int FULL_TIME = 2;
-            int EMP_RATE_PER_HOUR = 20;
+            const int EMP_RATE_PER_HOUR = 20;
+            const int NUMBER_OF_WORKING_DAYS = 20;
 
             //Variables
             int empHrs = 0;
             int empWage = 0;
-            Random random = new Random();
+            int empTotalWage = 0;
 
             //Computations
-            int isCheck = random.Next(0, 3);
-            switch (isCheck)
+            for (int day = 0; day < NUMBER_OF_WORKING_DAYS; day++)
             {
-                case PART_TIME:
-                    empHrs = 8;
-                    break;
-                case FULL_TIME:
-                    empHrs = 8;
-                    break;
-                default:
-                    empHrs = 0;
-                    break;
+                Random random = new Random();
+                int isCheck = random.Next(0, 3);
+                switch (isCheck)
+                {
+                    case PART_TIME:
+                        empHrs = 8;
+                        break;
+                    case FULL_TIME:
+                        empHrs = 8;
+                        break;
+                    default:
+                        empHrs = 0;
+                        break;
+                }
+                empWage = empHrs * EMP_RATE_PER_HOUR;
+                empTotalWage += empWage;
+                Console.WriteLine("Employee wage : {0} ", empWage);
             }
-
-            empWage = empHrs * EMP_RATE_PER_HOUR;
-            Console.WriteLine("Employee wage : {0} ", empWage);
+            Console.WriteLine("Total Employee Wage : {0}", empTotalWage);
             Console.ReadLine();
 
         }
