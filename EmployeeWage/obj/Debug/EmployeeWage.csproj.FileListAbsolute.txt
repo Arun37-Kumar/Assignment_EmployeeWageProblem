@@ -1,0 +1,8 @@
+E:\Assignments RFP\EmployeeWage\EmployeeWage\bin\Debug\EmployeeWage.exe.config
+E:\Assignments RFP\EmployeeWage\EmployeeWage\bin\Debug\EmployeeWage.exe
+E:\Assignments RFP\EmployeeWage\EmployeeWage\bin\Debug\EmployeeWage.pdb
+E:\Assignments RFP\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.csproj.AssemblyReference.cache
+E:\Assignments RFP\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.csproj.SuggestedBindingRedirects.cache
+E:\Assignments RFP\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.csproj.CoreCompileInputs.cache
+E:\Assignments RFP\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.exe
+E:\Assignments RFP\EmployeeWage\EmployeeWage\obj\Debug\EmployeeWage.pdb
